@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [formData, setFormData] = useState({
@@ -198,6 +199,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Analytics />
       </div>
     )
   }
@@ -516,6 +518,7 @@ function App() {
           200+ students have already shared their input
         </div>
       </div>
+      <Analytics />
     </div>
   )
 }
